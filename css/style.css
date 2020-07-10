@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "Quincy Jhons";
+  src: url("../fonts/QuincyJhons.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.aside {
+  float: left;
+  width: 300px;
+  background-color: #eeeeee;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+#menu-button-cont {
+  display: none;
+  transition: 0.5s;
+  z-index: 998;
+  color: white;
+  position: fixed;
+  top: 0;
+  margin-top: 5px;
+  padding-right: 7px;
+  background-color: #2c98f0;
+}
+
+@media screen and (min-width: 769px) {
+  .aside {
+    width: 300px !important;
+  }
+  .carousel-caption {
+    left: 30px;
+    right: auto;
+    top: 360px;
+    bottom: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aside {
+    width: 0;
+    -moz-transform: translateX(300);
+    -webkit-transform: translateX(300);
+    -ms-transform: translateX(300);
+    -o-transform: translateX(300);
+    transform: translateX(300);
+  }
+  #menu-button-cont {
+    display: inline;
+  }
+  #main {
+    left: 0 !important;
+    position: relative !important;
+  }
+  #main section + section {
+    padding-top: 100px;
+  }
+  .edu-icon {
+    display: none;
+  }
+  .card-body {
+    text-align: center;
+  }
+  #about > p {
+    width: 100% !important;
+  }
+}
+
+#menu-button {
+  color: black;
+  margin-right: 5px;
+  margin-left: 0;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+#author-img {
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+}
+
+ul {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 14px;
+}
+
+ul li {
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+li a {
+  font-size: 12px;
+  padding: 0 0 2px 0;
+  color: black;
+  border-width: 0 0 1px 0;
+  opacity: 70%;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+li a:active {
+  font-weight: 1000;
+  opacity: 100%;
+}
+
+li a:hover {
+  color: black;
+  text-decoration: underline double #2c98f0;
+  font-size: 14px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 100%;
+}
+
+#main {
+  position: absolute;
+  max-width: 100%;
+  top: 0 auto;
+  left: 300px;
+  transition: margin-left 0.5s;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff;
+  white-space: nowrap !important;
+  overflow-x: hidden;
+}
+
+a .fa {
+  padding: 7px;
+  padding-top: 0;
+  color: black;
+}
+
+.footer {
+  padding-top: 10px;
+}
+
+#author-sign {
+  padding: 0;
+  height: auto;
+  width: 65%;
+}
+
+#menu-list li {
+  padding: 3px;
+}
+
+#author-name {
+  font-family: "Quincy Jhons";
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+span {
+  font-family: "Quicksand, Arial, sans-serif";
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+#india-flag {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 7px;
+}
+
+.cv {
+  font-family: "Quicksand";
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent !important;
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 0 !important;
+  transition: 0.5s;
+}
+
+.cv:hover {
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.carousel-caption > h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: italic;
+}
+
+#main section + section {
+  padding-top: 150px;
+}
+
+h6 {
+  font-family: "Quicksand";
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+section > h4 {
+  font-family: "Playfair Display, Georgia, serif";
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+#myCarousel {
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+}
+
+.active-link {
+  color: #2c98f0 !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 100%;
+}
+
+section > p {
+  font-family: "Quicksand";
+  white-space: normal;
+  font-weight: 100%;
+  text-align: justify;
+}
+
+#about > p {
+  width: 80%;
+  text-indent: 2em;
+}
+
+.content {
+  max-width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+.card-deck > .card {
+  border-radius: 0;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  z-index: 900;
+  -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 10);
+  -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 10);
+  -ms-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 10);
+  -o-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 10);
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 10);
+}
+
+.card-deck > .card > .card-body {
+  background-color: #ffffff;
+}
+
+.card-symbol {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.card-symbol-zero {
+  color: #2fa499;
+}
+
+.card-symbol-one {
+  color: #a84cb8;
+}
+
+.card-symbol-two {
+  color: #ff99bb;
+}
+
+.card-foot {
+  height: 5px;
+}
+
+.card-zero {
+  border-bottom: 5px solid #2fa499;
+}
+
+.card-one {
+  border-bottom: 5px solid #a84cb8;
+}
+
+.card-two {
+  border-bottom: 5px solid #ff99bb;
+}
+
+.card-text {
+  text-align: center;
+  white-space: normal;
+}
+
+.card-deck > .card > .card-body {
+  padding: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.card-title {
+  white-space: normal;
+  color: #000000;
+}
+
+.cont {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.text-muted {
+  color: #000000 !important;
+}
+
+table {
+  font-family: "Quicksand";
+  white-space: nowrap !important;
+  margin: auto;
+}
+
+td, th {
+  padding: 10px;
+  border: 2px solid #777777;
+  text-align: center;
+  white-space: normal !important;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.edu-cont {
+  width: inherit;
+}
+
+.card-body {
+  white-space: normal;
+  background-color: #000000;
+}
+
+.accordion > .card {
+  margin-top: 5px;
+  border-radius: 0;
+  z-index: 900;
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 10);
+  -moz-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 10);
+  -ms-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 10);
+  -o-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 10);
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 10);
+  font-family: "Quicksand";
+}
+
+.accordion > .card > .card-header > h5 > button.collapsed {
+  color: #000000 !important;
+  text-transform: uppercase;
+}
+
+.accordion > .card > .card-header > h5 > button {
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+.card-header > h5 > .btn {
+  font-weight: 400;
+  font-family: "Quicksand";
+  float: left;
+  white-space: normal;
+  font-size: 14px;
+}
+
+.card-header > h5 > .btn:focus {
+  box-shadow: none !important;
+}
+
+#card-1 {
+  background-color: #2c98f0;
+}
+
+.edu-icon {
+  float: right;
+  color: #000000;
+  padding: 6px 12px;
+}
+
+.card-body > h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.card-body > div {
+  font-size: 14px;
+}
+
+.card-body > div > h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#medium-widget {
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  white-space: normal;
+  font-family: "Quicksand";
+}
+
+#coming-soon {
+  font-family: "Quicksand";
+  font-size: 18px;
+}
+
+.contact-card > i {
+  background-color: #eeeeee;
+  color: #2c98f0;
+  font-size: 20px;
+  padding: 40px;
+  font-weight: 800;
+  border-radius: 30%;
+}
+
+.author-info {
+  margin: 0 0 20px 0 !important;
+  padding: 10px;
+}
+
+.author-info > a:hover {
+  color: yellow;
+  text-decoration: none !important;
+}
+
+.row {
+  width: 100%;
+}
+
+input, textarea {
+  background-color: #dddddd !important;
+  border-radius: 0 !important;
+}
+
+.col-lg-6 {
+  padding: 0 0 0 15px !important;
+}
