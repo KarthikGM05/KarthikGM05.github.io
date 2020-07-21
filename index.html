@@ -364,22 +364,19 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-lg-pull-6">
-                            <form action="https://mailto:g.m.kart55@gmail.com">
+                            <form action="https://postmail.invotes.com/send">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="name">Email</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="name">Subject</label>
-                                    <input type="text" class="form-control" id="subject">
+                                    <label for="name">Name & Email</label>
+                                    <input type="text" name="subject" class="form-control" id="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="name">Message</label>
-                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                    <textarea class="form-control" name="text" id="message" rows="3"></textarea>
+                                </div>
+                                <input type="hidden" name="access_token" value="y7k6mtri0wypzxe8rt5fi7pf" />
+                                <div class="form-group">
+                                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
